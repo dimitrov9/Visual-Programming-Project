@@ -16,11 +16,6 @@ namespace Roulette
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult drlExit =  MessageBox.Show("Дали сакате да ја исклучите играта?", "Потврди излез", MessageBoxButtons.OKCancel);
@@ -28,6 +23,15 @@ namespace Roulette
             {
                 Application.Exit();
             }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            Game.SetInitialCredits(1000L);
+            BetScreen betScreen = new BetScreen();
+            betScreen.Show();
+            this.Visible = false;
+            
         }
     }
 }

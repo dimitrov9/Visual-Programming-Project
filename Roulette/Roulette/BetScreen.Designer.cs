@@ -64,27 +64,30 @@
             this.button34 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
+            this.button0 = new System.Windows.Forms.Button();
+            this.btnFirst12 = new System.Windows.Forms.Button();
+            this.btnSecond12 = new System.Windows.Forms.Button();
+            this.btnThird12 = new System.Windows.Forms.Button();
+            this.btn1to18 = new System.Windows.Forms.Button();
+            this.btnEVEN = new System.Windows.Forms.Button();
+            this.btnRed = new System.Windows.Forms.Button();
+            this.btnBlack = new System.Windows.Forms.Button();
+            this.btnODD = new System.Windows.Forms.Button();
+            this.btn19to36 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancelBet = new System.Windows.Forms.Button();
+            this.btnCancelAll = new System.Windows.Forms.Button();
+            this.btnDoubleAll = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.lblNumber = new System.Windows.Forms.Label();
             this.pnlBetButtons = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTotalBet = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlBetButtons.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +99,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
             // 
             // button2
             // 
@@ -412,95 +416,95 @@
             this.button36.Text = "36";
             this.button36.UseVisualStyleBackColor = true;
             // 
-            // button37
+            // button0
             // 
-            this.button37.Location = new System.Drawing.Point(3, 3);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(70, 222);
-            this.button37.TabIndex = 0;
-            this.button37.Text = "0";
-            this.button37.UseVisualStyleBackColor = true;
+            this.button0.Location = new System.Drawing.Point(3, 3);
+            this.button0.Name = "button0";
+            this.button0.Size = new System.Drawing.Size(70, 222);
+            this.button0.TabIndex = 0;
+            this.button0.Text = "0";
+            this.button0.UseVisualStyleBackColor = true;
             // 
-            // button38
+            // btnFirst12
             // 
-            this.button38.Location = new System.Drawing.Point(79, 231);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(298, 70);
-            this.button38.TabIndex = 36;
-            this.button38.Text = "1st 12";
-            this.button38.UseVisualStyleBackColor = true;
+            this.btnFirst12.Location = new System.Drawing.Point(79, 231);
+            this.btnFirst12.Name = "btnFirst12";
+            this.btnFirst12.Size = new System.Drawing.Size(298, 70);
+            this.btnFirst12.TabIndex = 36;
+            this.btnFirst12.Text = "1st 12";
+            this.btnFirst12.UseVisualStyleBackColor = true;
             // 
-            // button39
+            // btnSecond12
             // 
-            this.button39.Location = new System.Drawing.Point(383, 231);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(298, 70);
-            this.button39.TabIndex = 37;
-            this.button39.Text = "2nd 12";
-            this.button39.UseVisualStyleBackColor = true;
+            this.btnSecond12.Location = new System.Drawing.Point(383, 231);
+            this.btnSecond12.Name = "btnSecond12";
+            this.btnSecond12.Size = new System.Drawing.Size(298, 70);
+            this.btnSecond12.TabIndex = 37;
+            this.btnSecond12.Text = "2nd 12";
+            this.btnSecond12.UseVisualStyleBackColor = true;
             // 
-            // button40
+            // btnThird12
             // 
-            this.button40.Location = new System.Drawing.Point(687, 231);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(298, 70);
-            this.button40.TabIndex = 38;
-            this.button40.Text = "3rd 12";
-            this.button40.UseVisualStyleBackColor = true;
+            this.btnThird12.Location = new System.Drawing.Point(687, 231);
+            this.btnThird12.Name = "btnThird12";
+            this.btnThird12.Size = new System.Drawing.Size(298, 70);
+            this.btnThird12.TabIndex = 38;
+            this.btnThird12.Text = "3rd 12";
+            this.btnThird12.UseVisualStyleBackColor = true;
             // 
-            // button41
+            // btn1to18
             // 
-            this.button41.Location = new System.Drawing.Point(79, 307);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(146, 70);
-            this.button41.TabIndex = 39;
-            this.button41.Text = "1 to 18";
-            this.button41.UseVisualStyleBackColor = true;
+            this.btn1to18.Location = new System.Drawing.Point(79, 307);
+            this.btn1to18.Name = "btn1to18";
+            this.btn1to18.Size = new System.Drawing.Size(146, 70);
+            this.btn1to18.TabIndex = 39;
+            this.btn1to18.Text = "1 to 18";
+            this.btn1to18.UseVisualStyleBackColor = true;
             // 
-            // button42
+            // btnEVEN
             // 
-            this.button42.Location = new System.Drawing.Point(231, 307);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(146, 70);
-            this.button42.TabIndex = 40;
-            this.button42.Text = "EVEN";
-            this.button42.UseVisualStyleBackColor = true;
+            this.btnEVEN.Location = new System.Drawing.Point(231, 307);
+            this.btnEVEN.Name = "btnEVEN";
+            this.btnEVEN.Size = new System.Drawing.Size(146, 70);
+            this.btnEVEN.TabIndex = 40;
+            this.btnEVEN.Text = "EVEN";
+            this.btnEVEN.UseVisualStyleBackColor = true;
             // 
-            // button43
+            // btnRed
             // 
-            this.button43.Location = new System.Drawing.Point(383, 307);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(146, 70);
-            this.button43.TabIndex = 41;
-            this.button43.Text = "RED";
-            this.button43.UseVisualStyleBackColor = true;
+            this.btnRed.Location = new System.Drawing.Point(383, 307);
+            this.btnRed.Name = "btnRed";
+            this.btnRed.Size = new System.Drawing.Size(146, 70);
+            this.btnRed.TabIndex = 41;
+            this.btnRed.Text = "RED";
+            this.btnRed.UseVisualStyleBackColor = true;
             // 
-            // button44
+            // btnBlack
             // 
-            this.button44.Location = new System.Drawing.Point(535, 307);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(146, 70);
-            this.button44.TabIndex = 42;
-            this.button44.Text = "BLACK";
-            this.button44.UseVisualStyleBackColor = true;
+            this.btnBlack.Location = new System.Drawing.Point(535, 307);
+            this.btnBlack.Name = "btnBlack";
+            this.btnBlack.Size = new System.Drawing.Size(146, 70);
+            this.btnBlack.TabIndex = 42;
+            this.btnBlack.Text = "BLACK";
+            this.btnBlack.UseVisualStyleBackColor = true;
             // 
-            // button45
+            // btnODD
             // 
-            this.button45.Location = new System.Drawing.Point(687, 307);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(146, 70);
-            this.button45.TabIndex = 43;
-            this.button45.Text = "ODD";
-            this.button45.UseVisualStyleBackColor = true;
+            this.btnODD.Location = new System.Drawing.Point(687, 307);
+            this.btnODD.Name = "btnODD";
+            this.btnODD.Size = new System.Drawing.Size(146, 70);
+            this.btnODD.TabIndex = 43;
+            this.btnODD.Text = "ODD";
+            this.btnODD.UseVisualStyleBackColor = true;
             // 
-            // button46
+            // btn19to36
             // 
-            this.button46.Location = new System.Drawing.Point(839, 307);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(146, 70);
-            this.button46.TabIndex = 44;
-            this.button46.Text = "19 to 36";
-            this.button46.UseVisualStyleBackColor = true;
+            this.btn19to36.Location = new System.Drawing.Point(839, 307);
+            this.btn19to36.Name = "btn19to36";
+            this.btn19to36.Size = new System.Drawing.Size(146, 70);
+            this.btn19to36.TabIndex = 44;
+            this.btn19to36.Text = "19 to 36";
+            this.btn19to36.UseVisualStyleBackColor = true;
             // 
             // button47
             // 
@@ -529,64 +533,65 @@
             this.button49.Text = "2 to 1";
             this.button49.UseVisualStyleBackColor = true;
             // 
-            // button50
+            // btnCancelBet
             // 
-            this.button50.Location = new System.Drawing.Point(3, 231);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(70, 70);
-            this.button50.TabIndex = 48;
-            this.button50.Text = "Cancel";
-            this.button50.UseVisualStyleBackColor = true;
+            this.btnCancelBet.Location = new System.Drawing.Point(3, 231);
+            this.btnCancelBet.Name = "btnCancelBet";
+            this.btnCancelBet.Size = new System.Drawing.Size(70, 70);
+            this.btnCancelBet.TabIndex = 48;
+            this.btnCancelBet.Text = "Cancel";
+            this.btnCancelBet.UseVisualStyleBackColor = true;
             // 
-            // button51
+            // btnCancelAll
             // 
-            this.button51.Location = new System.Drawing.Point(3, 307);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(70, 70);
-            this.button51.TabIndex = 49;
-            this.button51.Text = "Cancel All";
-            this.button51.UseVisualStyleBackColor = true;
+            this.btnCancelAll.Location = new System.Drawing.Point(3, 307);
+            this.btnCancelAll.Name = "btnCancelAll";
+            this.btnCancelAll.Size = new System.Drawing.Size(70, 70);
+            this.btnCancelAll.TabIndex = 49;
+            this.btnCancelAll.Text = "Cancel All";
+            this.btnCancelAll.UseVisualStyleBackColor = true;
             // 
-            // button52
+            // btnDoubleAll
             // 
-            this.button52.Location = new System.Drawing.Point(991, 231);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(70, 70);
-            this.button52.TabIndex = 50;
-            this.button52.Text = "Double All";
-            this.button52.UseVisualStyleBackColor = true;
+            this.btnDoubleAll.Location = new System.Drawing.Point(991, 231);
+            this.btnDoubleAll.Name = "btnDoubleAll";
+            this.btnDoubleAll.Size = new System.Drawing.Size(70, 70);
+            this.btnDoubleAll.TabIndex = 50;
+            this.btnDoubleAll.Text = "Double All";
+            this.btnDoubleAll.UseVisualStyleBackColor = true;
             // 
-            // button53
+            // btnStart
             // 
-            this.button53.Location = new System.Drawing.Point(991, 307);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(70, 70);
-            this.button53.TabIndex = 51;
-            this.button53.Text = "Start";
-            this.button53.UseVisualStyleBackColor = true;
+            this.btnStart.Location = new System.Drawing.Point(991, 307);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(70, 70);
+            this.btnStart.TabIndex = 51;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // label1
+            // lblNumber
             // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(500, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 17);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "0";
+            this.lblNumber.AutoSize = true;
+            this.lblNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblNumber.Location = new System.Drawing.Point(500, 79);
+            this.lblNumber.Name = "lblNumber";
+            this.lblNumber.Size = new System.Drawing.Size(16, 17);
+            this.lblNumber.TabIndex = 52;
+            this.lblNumber.Text = "0";
             // 
             // pnlBetButtons
             // 
             this.pnlBetButtons.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlBetButtons.Controls.Add(this.button37);
+            this.pnlBetButtons.Controls.Add(this.button0);
             this.pnlBetButtons.Controls.Add(this.button1);
-            this.pnlBetButtons.Controls.Add(this.button53);
+            this.pnlBetButtons.Controls.Add(this.btnStart);
             this.pnlBetButtons.Controls.Add(this.button2);
-            this.pnlBetButtons.Controls.Add(this.button52);
+            this.pnlBetButtons.Controls.Add(this.btnDoubleAll);
             this.pnlBetButtons.Controls.Add(this.button3);
-            this.pnlBetButtons.Controls.Add(this.button51);
+            this.pnlBetButtons.Controls.Add(this.btnCancelAll);
             this.pnlBetButtons.Controls.Add(this.button6);
-            this.pnlBetButtons.Controls.Add(this.button50);
+            this.pnlBetButtons.Controls.Add(this.btnCancelBet);
             this.pnlBetButtons.Controls.Add(this.button5);
             this.pnlBetButtons.Controls.Add(this.button49);
             this.pnlBetButtons.Controls.Add(this.button4);
@@ -594,23 +599,23 @@
             this.pnlBetButtons.Controls.Add(this.button7);
             this.pnlBetButtons.Controls.Add(this.button47);
             this.pnlBetButtons.Controls.Add(this.button8);
-            this.pnlBetButtons.Controls.Add(this.button46);
+            this.pnlBetButtons.Controls.Add(this.btn19to36);
             this.pnlBetButtons.Controls.Add(this.button9);
-            this.pnlBetButtons.Controls.Add(this.button45);
+            this.pnlBetButtons.Controls.Add(this.btnODD);
             this.pnlBetButtons.Controls.Add(this.button10);
-            this.pnlBetButtons.Controls.Add(this.button44);
+            this.pnlBetButtons.Controls.Add(this.btnBlack);
             this.pnlBetButtons.Controls.Add(this.button11);
-            this.pnlBetButtons.Controls.Add(this.button43);
+            this.pnlBetButtons.Controls.Add(this.btnRed);
             this.pnlBetButtons.Controls.Add(this.button12);
-            this.pnlBetButtons.Controls.Add(this.button42);
+            this.pnlBetButtons.Controls.Add(this.btnEVEN);
             this.pnlBetButtons.Controls.Add(this.button13);
-            this.pnlBetButtons.Controls.Add(this.button41);
+            this.pnlBetButtons.Controls.Add(this.btn1to18);
             this.pnlBetButtons.Controls.Add(this.button14);
-            this.pnlBetButtons.Controls.Add(this.button40);
+            this.pnlBetButtons.Controls.Add(this.btnThird12);
             this.pnlBetButtons.Controls.Add(this.button15);
-            this.pnlBetButtons.Controls.Add(this.button39);
+            this.pnlBetButtons.Controls.Add(this.btnSecond12);
             this.pnlBetButtons.Controls.Add(this.button16);
-            this.pnlBetButtons.Controls.Add(this.button38);
+            this.pnlBetButtons.Controls.Add(this.btnFirst12);
             this.pnlBetButtons.Controls.Add(this.button17);
             this.pnlBetButtons.Controls.Add(this.button18);
             this.pnlBetButtons.Controls.Add(this.button36);
@@ -647,22 +652,51 @@
             // 
             // lblCredits
             // 
-            this.lblCredits.AutoSize = true;
-            this.lblCredits.Location = new System.Drawing.Point(136, 79);
+            this.lblCredits.Location = new System.Drawing.Point(175, 79);
             this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(66, 17);
-            this.lblCredits.TabIndex = 55;
+            this.lblCredits.Size = new System.Drawing.Size(100, 23);
+            this.lblCredits.TabIndex = 0;
             this.lblCredits.Text = "lblCredits";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(73, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Total Bet:";
+            // 
+            // lblTotalBet
+            // 
+            this.lblTotalBet.AutoSize = true;
+            this.lblTotalBet.Location = new System.Drawing.Point(175, 102);
+            this.lblTotalBet.Name = "lblTotalBet";
+            this.lblTotalBet.Size = new System.Drawing.Size(75, 17);
+            this.lblTotalBet.TabIndex = 56;
+            this.lblTotalBet.Text = "lblTotalBet";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(392, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 17);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Next Guess:";
             // 
             // BetScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 618);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTotalBet);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlBetButtons);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblNumber);
             this.Name = "BetScreen";
             this.Text = "BetScreen";
             this.pnlBetButtons.ResumeLayout(false);
@@ -709,26 +743,29 @@
         private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button0;
+        private System.Windows.Forms.Button btnFirst12;
+        private System.Windows.Forms.Button btnSecond12;
+        private System.Windows.Forms.Button btnThird12;
+        private System.Windows.Forms.Button btn1to18;
+        private System.Windows.Forms.Button btnEVEN;
+        private System.Windows.Forms.Button btnRed;
+        private System.Windows.Forms.Button btnBlack;
+        private System.Windows.Forms.Button btnODD;
+        private System.Windows.Forms.Button btn19to36;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button51;
-        private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancelBet;
+        private System.Windows.Forms.Button btnCancelAll;
+        private System.Windows.Forms.Button btnDoubleAll;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.Panel pnlBetButtons;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTotalBet;
+        private System.Windows.Forms.Label label3;
     }
 }

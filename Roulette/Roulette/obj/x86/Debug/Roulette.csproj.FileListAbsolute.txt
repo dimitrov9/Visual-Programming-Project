@@ -5,3 +5,4 @@ C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.csproj.GenerateResource.Cache
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.exe
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.pdb
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.BetScreen.resources
