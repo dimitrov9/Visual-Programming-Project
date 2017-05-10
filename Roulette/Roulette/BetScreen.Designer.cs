@@ -700,6 +700,7 @@
             this.Controls.Add(this.lblNumber);
             this.Name = "BetScreen";
             this.Text = "BetScreen";
+            this.Load += new System.EventHandler(this.BetScreen_Load);
             this.pnlBetButtons.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
