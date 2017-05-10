@@ -77,7 +77,7 @@
             this.button47 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
-            this.btnCancelBet = new System.Windows.Forms.Button();
+            this.btnRepeat = new System.Windows.Forms.Button();
             this.btnCancelAll = new System.Windows.Forms.Button();
             this.btnDoubleAll = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
@@ -533,14 +533,15 @@
             this.button49.Text = "2 to 1";
             this.button49.UseVisualStyleBackColor = true;
             // 
-            // btnCancelBet
+            // btnRepeat
             // 
-            this.btnCancelBet.Location = new System.Drawing.Point(3, 231);
-            this.btnCancelBet.Name = "btnCancelBet";
-            this.btnCancelBet.Size = new System.Drawing.Size(70, 70);
-            this.btnCancelBet.TabIndex = 48;
-            this.btnCancelBet.Text = "Cancel";
-            this.btnCancelBet.UseVisualStyleBackColor = true;
+            this.btnRepeat.Location = new System.Drawing.Point(3, 231);
+            this.btnRepeat.Name = "btnRepeat";
+            this.btnRepeat.Size = new System.Drawing.Size(70, 70);
+            this.btnRepeat.TabIndex = 48;
+            this.btnRepeat.Text = "Repeat";
+            this.btnRepeat.UseVisualStyleBackColor = true;
+            this.btnRepeat.Click += new System.EventHandler(this.btnRepeat_Click);
             // 
             // btnCancelAll
             // 
@@ -591,7 +592,7 @@
             this.pnlBetButtons.Controls.Add(this.button3);
             this.pnlBetButtons.Controls.Add(this.btnCancelAll);
             this.pnlBetButtons.Controls.Add(this.button6);
-            this.pnlBetButtons.Controls.Add(this.btnCancelBet);
+            this.pnlBetButtons.Controls.Add(this.btnRepeat);
             this.pnlBetButtons.Controls.Add(this.button5);
             this.pnlBetButtons.Controls.Add(this.button49);
             this.pnlBetButtons.Controls.Add(this.button4);
@@ -756,7 +757,7 @@
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
-        private System.Windows.Forms.Button btnCancelBet;
+        private System.Windows.Forms.Button btnRepeat;
         private System.Windows.Forms.Button btnCancelAll;
         private System.Windows.Forms.Button btnDoubleAll;
         private System.Windows.Forms.Button btnStart;

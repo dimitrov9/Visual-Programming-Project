@@ -63,7 +63,13 @@ namespace Roulette
             {
                  profit = (Int32)(numBets[1] * 36 - totalBet);
             }
-            credits += profit;
+
+
+            if (profit > 0)
+            {
+                credits += profit;
+            }
+
             return profit;
         }
 
@@ -88,6 +94,31 @@ namespace Roulette
             numBets[number] += 5;
             totalBet += 5;
             credits -= 5;
+        }
+
+        ///<summary>
+        ///Saves the previus bet in prevTotalBet & prevNumBets
+        ///</summary>
+        public static void SavePrevBet()
+        {
+            prevTotalBet = totalBet;
+            for (int i = 0; i < 37; i++)
+            {
+                prevNumBets[i] = numBets[i];
+            }
+        }
+
+        ///<summary>
+        ///Bets the previous bet
+        ///</summary>
+        public static void BetPrev()
+        {
+            totalBet = prevTotalBet;
+            for (int i = 0; i < 37; i++)
+            {
+                numBets[i] = prevNumBets[i];
+            }
+            credits -= totalBet;
         }
     }
 }

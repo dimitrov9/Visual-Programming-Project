@@ -28,10 +28,18 @@ namespace Roulette
                 Random rnd = new Random();
                 int nextGuess = rnd.Next(0, 2);
 
+                //string numBetsString = "";
+                //for (int i = 0; i < 37; i++)
+                //{
+                //    numBetsString = numBetsString + "Index " + i + "of numBets is:" + Game.numBets[i].ToString() + System.Environment.NewLine;
+                //}
+                //MessageBox.Show(numBetsString);
+
+
                 lblNumber.Text = nextGuess.ToString();
 
                 int profit = Game.ReturnProfitLoss(nextGuess);
-
+                
                 if (profit > 0)
                 {
                     MessageBox.Show("Освоивте " + profit + " денари!!", "Добивте");
@@ -44,6 +52,7 @@ namespace Roulette
                 {
                     MessageBox.Show("Не добивте ништо", "На 0 сте");
                 }
+                Game.SavePrevBet();
                 Game.ResetAllBets();
                 UpdateLabels();
 
@@ -59,6 +68,12 @@ namespace Roulette
         private void button1_MouseDown(object sender, MouseEventArgs e)
         {
             Game.InstertNumberBet(1);
+            UpdateLabels();
+        }
+
+        private void btnRepeat_Click(object sender, EventArgs e)
+        {
+            Game.BetPrev();
             UpdateLabels();
         }
 

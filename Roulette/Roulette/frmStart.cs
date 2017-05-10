@@ -30,8 +30,7 @@ namespace Roulette
             Game.SetInitialCredits(1000L);
             BetScreen betScreen = new BetScreen();
             betScreen.Show();
-            this.Visible = false;
-            
+            this.Hide();    
         }
     }
 }
