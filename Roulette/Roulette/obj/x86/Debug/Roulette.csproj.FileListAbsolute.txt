@@ -6,3 +6,5 @@ C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.exe
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.pdb
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.BetScreen.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.SaveAndExit.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.csprojResolveAssemblyReference.cache
