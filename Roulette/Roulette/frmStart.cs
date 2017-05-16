@@ -29,8 +29,46 @@ namespace Roulette
         {
             Game.SetInitialCredits(1000L);
             BetScreen betScreen = new BetScreen();
-            betScreen.Show();
-            this.Hide();    
+            this.Hide();
+            DialogResult rsltScreen = betScreen.ShowDialog();
+            if (rsltScreen == DialogResult.No)
+            {
+                Application.Exit();
+            }
+            else if (rsltScreen == DialogResult.Yes)
+            {
+                System.IO.File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"Save", Game.credits.ToString());
+                // Add a function to save the credits
+                Application.Exit();
+            }
+            else if (rsltScreen == DialogResult.Cancel)
+            {
+                this.Show();
+            }
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            string savedCredits = System.IO.File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"Save");
+            long credits = Convert.ToInt64(savedCredits);
+            Game.SetInitialCredits(credits);
+            BetScreen betScreen = new BetScreen();
+            this.Hide();
+            DialogResult rsltScreen = betScreen.ShowDialog();
+            if (rsltScreen == DialogResult.No)
+            {
+                Application.Exit();
+            }
+            else if (rsltScreen == DialogResult.Yes)
+            {
+                System.IO.File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"Save", Game.credits.ToString());
+                // Add a function to save the credits
+                Application.Exit();
+            }
+            else if (rsltScreen == DialogResult.Cancel)
+            {
+                this.Show();
+            }
         }
     }
 }

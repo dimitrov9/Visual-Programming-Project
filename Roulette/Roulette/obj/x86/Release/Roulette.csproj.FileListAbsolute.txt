@@ -1,0 +1,9 @@
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\bin\Release\Roulette.exe
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\bin\Release\Roulette.pdb
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.BetScreen.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.frmStart.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.Properties.Resources.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.SaveAndExit.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.csproj.GenerateResource.Cache
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.exe
+C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Release\Roulette.pdb
