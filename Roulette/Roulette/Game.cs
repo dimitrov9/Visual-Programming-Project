@@ -5,26 +5,26 @@ using System.Text;
 
 namespace Roulette
 {
-    public static class Game
+    [Serializable]
+    public class Game
     {
         ///<summary>
         ///The number of credits avaliable the player has
         ///</summary>
-        public static long credits;
-
+        public   long credits;
 
         ///<summary>
         ///The Total amount of invested credits 
         ///</summary>
-        public static long totalBet;
+        public   long totalBet;
         ///<summary>
         ///0-36 Array cointaining invested credits for each number
         ///</summary>
-        public static long[] numBets = new long[37];
+        public   long[] numBets;
 
-        public static long first12;
-        public static long second12;
-        public static long third12;
+        public   long first12;
+        public   long second12;
+        public   long third12;
         ///<summary>
         ///0-6 Array contains the credits of the following bets:<br/>
         ///0. 1-18 <br/>
@@ -34,28 +34,45 @@ namespace Roulette
         ///4. red  <br/>
         ///5. black
         ///</summary>
-        public static long[] otherBets = new long[6];
+        public   long[] otherBets ;
 
 
-        public static long prevTotalBet;
-        public static long[] prevNumBets = new long[37];
-        public static long prevFirst12;
-        public static long prevSecond12;
-        public static long prevThird12;
-        public static long[] prevOtherBets = new long[6];
+        public   long prevTotalBet;
+        public   long[] prevNumBets ;
+        public   long prevFirst12;
+        public   long prevSecond12;
+        public   long prevThird12;
+        public long[] prevOtherBets;
 
-        private static int[] redNumbers = new int[18]{ 2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33 , 35};
-        private static int[] blackNumbers = new int[18] {  1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34 ,36 };
+        public   int[] redNumbers ;
+        public   int[] blackNumbers;
         // Initializes a game that takes one argumet of Credits how much the player should start with and the other are 0
-        //public static Game()
+        //public   Game()
         //{
         //}
 
-
+        public Game(long initCredits)
+        {
+            credits = initCredits;
+            totalBet = 0;
+            numBets = new long[37];
+            first12=0;
+            second12=0;
+            third12=0;
+            otherBets = new long[6];
+            prevTotalBet = 0;
+            prevNumBets = new long[37];
+            prevFirst12=0;
+            prevSecond12=0;
+            prevThird12=0;
+            prevOtherBets = new long[6];
+            redNumbers = new int[18] { 2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35 };
+            blackNumbers = new int[18] { 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 };
+        }
         ///<summary>
         ///Sets the input to credits and sets the bets to 0
         ///</summary>
-        public static void SetInitialCredits(long Credits) 
+        public   void SetInitialCredits(long Credits) 
         {
             credits = Credits;
 
@@ -75,7 +92,7 @@ namespace Roulette
         ///<summary>
         ///Takes a number, returns the profit or loss, and adds it to credits
         ///</summary>
-        public static int ReturnProfitLoss(int nextGuess)
+        public   int ReturnProfitLoss(int nextGuess)
         {
             int profit = 0;
             profit = (int)(numBets[nextGuess] * 36 );
@@ -133,7 +150,7 @@ namespace Roulette
         ///<summary>
         ///Resets all current Bets to 0
         ///</summary>
-        public static void ResetAllBets()
+        public   void ResetAllBets()
         {
             totalBet = 0L;
             for(int i=0;i<numBets.Length;i++)
@@ -153,14 +170,14 @@ namespace Roulette
         ///<summary>
         ///Takes a number and adds 5 to the numBets array at a index of that number, updates totalBet and credits.
         ///</summary>
-        public static void InstertNumberBet(int number,int betAmount)
+        public   void InstertNumberBet(int number,int betAmount)
         {
             numBets[number] += betAmount;
             totalBet += betAmount;
             credits -= betAmount;
         }
 
-        public static void InsertTwelves(int number, int betAmount)
+        public   void InsertTwelves(int number, int betAmount)
         {
             if (number == 1)
             {
@@ -178,7 +195,7 @@ namespace Roulette
             credits -= betAmount;
         }
 
-        public static void InsertOtherBets(int number, int betAmount)
+        public   void InsertOtherBets(int number, int betAmount)
         {
             otherBets[number] += betAmount;
             totalBet += betAmount;
@@ -188,7 +205,7 @@ namespace Roulette
         ///<summary>
         ///Saves the previus bet in prevTotalBet & prevNumBets
         ///</summary>
-        public static void SavePrevBet()
+        public   void SavePrevBet()
         {
             prevTotalBet = totalBet;
             for (int i = 0; i < 37; i++)
@@ -207,7 +224,7 @@ namespace Roulette
         ///<summary>
         ///Bets the previous bet
         ///</summary>
-        public static void BetPrev()
+        public   void BetPrev()
         {
             totalBet = prevTotalBet;
             for (int i = 0; i < 37; i++)
@@ -227,7 +244,7 @@ namespace Roulette
         ///<summary>
         ///Resets the bets to 0 and returns credit
         ///</summary>
-        public static void CancelAllBets()
+        public   void CancelAllBets()
         {
             credits += totalBet;
             totalBet = 0;
@@ -247,7 +264,7 @@ namespace Roulette
         ///<summary>
         ///Doubles all the bets
         ///</summary>
-        public static void DoubleAllBets()
+        public   void DoubleAllBets()
         {
             credits -= totalBet;
             totalBet *= 2;
@@ -266,7 +283,7 @@ namespace Roulette
         }
 
 
-        private static bool isRed(int number)
+        public   bool isRed(int number)
         {
             foreach (int red in redNumbers)
             {
@@ -278,7 +295,7 @@ namespace Roulette
             return false;
         }
 
-        private static bool isBlack(int number)
+        public   bool isBlack(int number)
         {
             foreach (int black in blackNumbers)
             {
