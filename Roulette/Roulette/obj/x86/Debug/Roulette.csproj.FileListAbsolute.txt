@@ -8,3 +8,13 @@ C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.BetScreen.resources
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.SaveAndExit.resources
 C:\Users\Valentina Dimitrov\Documents\GitHub\Visual-Programming-Project\Roulette\Roulette\obj\x86\Debug\Roulette.csprojResolveAssemblyReference.cache
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.exe
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.pdb
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\bin\Debug\Roulette.exe
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\bin\Debug\Roulette.pdb
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.csprojResolveAssemblyReference.cache
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.BetScreen.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.frmStart.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.Properties.Resources.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.SaveAndExit.resources
+C:\Users\Valentina Dimitrov\Documents\GitHub\Roulette\Visual-Programming-Project-master\Roulette\Roulette\obj\x86\Debug\Roulette.csproj.GenerateResource.Cache

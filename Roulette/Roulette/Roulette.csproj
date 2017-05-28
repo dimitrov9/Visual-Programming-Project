@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ball.cs" />
     <Compile Include="BetScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +99,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Red Chip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roulette Wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roulette wheel 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wheel 3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
